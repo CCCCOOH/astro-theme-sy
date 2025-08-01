@@ -1,0 +1,19 @@
+---
+const platform = "github";
+const username = "withastro";
+---
+
+<footer>
+  <p>在 <a href={`https://www.${platform}.com/${username}`}>{platform}</a> 上，了解有关我的项目的更多信息！</p>
+</footer>
+
+<style>
+  footer {
+    background-color: wheat;
+    color: navy;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>

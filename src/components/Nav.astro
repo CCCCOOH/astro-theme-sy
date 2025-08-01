@@ -1,0 +1,41 @@
+---
+const mainColor = 'navy';
+const liGap = '10px'
+const bgColor = 'white'
+---
+
+<ul>
+  <li>
+    <a href="/">首页</a>
+  </li>
+  <li>
+    <a href="/about">about</a>
+  </li>
+  <li>
+    <a href="/blog">blog</a>
+  </li>
+  <li>
+    <a href="/archive">archive</a>
+  </li>
+</ul>
+
+<style define:vars={{mainColor, liGap, bgColor}}>
+  ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  ul li a {
+    text-decoration: none;
+    color: var(--mainColor);
+  }
+  ul {
+    background-color: var(--bgColor);
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: var(--liGap);
+    border-bottom: 1px solid #000;
+  }
+</style>
